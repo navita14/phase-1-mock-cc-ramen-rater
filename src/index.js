@@ -49,12 +49,11 @@ const newComment = document.querySelector("#new-comment")
 form.addEventListener("submit", e => {
     e.preventDefault();
 
-    console.log("submit")
     const newImgone = document.createElement("img")
         newImgone.src = newImg.value
         ramenDiv.append(newImgone)
 
-    newImg.addEventListener("click", e => {
+    newImgone.addEventListener("click", e => {
         addRamenMenu(newRamen)
     })
 
